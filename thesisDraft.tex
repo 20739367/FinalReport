@@ -1,0 +1,66 @@
+\documentclass[a4paper, 12pt, titlepage]{article}
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage[pdftex]{graphicx}
+\usepackage{pdfpages}
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{cite}
+\usepackage{import}
+\usepackage[title,titletoc,toc]{appendix}
+
+\title{Multirotor Drone Collision Avoidance}
+\author{Richard Allen}
+
+\begin{document}
+
+\input{./titlepage.tex}
+%\maketitle
+
+\begin{abstract}
+    This report outlines a study into adapting an unmanned aerial vehicle for autonomous control. The main focus of study is on collision avoidance on widely accessible platform with relatively limited computing power. 
+    It includes: 
+    \begin{itemize}
+        \item An overview of the platform hardware and design choices in it's construction,
+        \item An explanation of the data structures used for storing and navigating around obstacles in the environment, and
+        \item An explanation of the algorithms used for navigation.
+    \end{itemize} 
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+	\subsection{Motovation}
+
+	\subsection{Project History}
+		\subsubsection{2013}
+		\subsubsection{2014}
+
+\section{Background}
+    \subsection{Obstacle detection methods}
+        \subsubsection{LIDAR}
+        \subsubsection{Optical Flow}
+        \subsubsection{Stereoscopy}
+        
+\section{Design}
+    \subsection{Picopter}
+    \subsection{ArduPilot}
+    \subsection{Software design}
+    \subsection{Web interface}
+    \subsection{Obstacle navigation}
+        \subsubsection{graph data structure}
+        \subsubsection{Astar algorithm navigation}
+        \subsubsection{DistBug algorithm navigation}
+        \subsubsection{Voronoi graph navigation}
+    \subsection{Obstacle detection}
+        \subsubsection{LIDAR}
+        \subsubsection{Voxel space}
+
+\section{Results}
+    \subsection{Astar obstacle avoidance}
+    \subsection{voxel space}
+        
+        
+\end{document}    
